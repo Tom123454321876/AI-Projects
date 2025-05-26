@@ -1,2 +1,2 @@
 # AI-Projects
-A collection of AI projects focused on efficiency, green AI, and novel ML applications.
+A curated collection of AI projects emphasizing efficiency, sustainable (green) AI, and innovative machine learning applications. These projects were developed as part of my M.S. in Applied Artificial Intelligence at the University of San Diego.
