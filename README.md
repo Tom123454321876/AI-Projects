@@ -1,4 +1,5 @@
 # AI-Projects
+
 # 🧬 Breast Cancer Malignancy Predictor
 
 A supervised machine learning project to predict breast cancer malignancy using diagnostic features from the Wisconsin Breast Cancer Dataset.  
@@ -48,6 +49,56 @@ Developed as part of the AAI-500 Capstone Project — *M.S. Applied Artificial I
 | **Pros Loung** | Model Evaluator & Report Lead | - Evaluated models using confusion matrices and ROC curves<br>- Calculated classification metrics (e.g. F1-score)<br>- Compiled and formatted final report<br>- Wrote evaluation and conclusion sections |
 
 ---
+
+# 🌲 Forest Fire Predictor
+
+A machine learning project predicting forest fire severity using weather data and multiple regression-based models.  
+[View Repository](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2)  
+Developed as part of the AAI-501 course — *M.S. Applied Artificial Intelligence* — University of San Diego.
+
+---
+
+## 📊 Project Overview
+
+- **Dataset:** UCI Forest Fire Dataset (plus integrated real-time weather API)
+- **Techniques Used:** Data Cleaning, Feature Engineering, Scaling, Model Comparison
+- **Models Built:** Linear Regression, Random Forest, Lasso Regression, Keras Neural Network
+- **Evaluation Metrics:** R² Score, Mean Absolute Error (MAE)
+- **Tools:** Python, pandas, scikit-learn, matplotlib, seaborn, Keras, API integration
+
+---
+
+## 🛠️ Workflow
+
+### 1️⃣ Data Preparation
+- Removed irrelevant features and handled missing values.
+- Scaled numerical data for regression and neural network models.
+- Integrated 7-day weather API for short-term prediction enhancement.
+
+### 2️⃣ Model Development
+- Implemented Linear Regression for baseline interpretability.
+- Applied Random Forest for capturing complex feature interactions.
+- Used Lasso Regression for feature selection and regularization.
+- Built a Keras deep learning model to detect nonlinear patterns.
+
+### 3️⃣ Model Evaluation
+- Compared R² and MAE across models.
+- Created residual and prediction vs. actual plots.
+- Analyzed feature importance from tree-based models.
+
+---
+
+## 👥 Team Members & Roles
+
+| Team Member | Role | Responsibilities |
+| ------------ | ---- | ----------------- |
+| **Thomas Geraci** | Data Engineer & Analyst | - Led data cleaning, transformation, and scaling<br>- Implemented Linear Regression<br>- Created residual and predicted vs. actual plots<br>- Contributed to Keras and weather API sections |
+| **Daniel** | Random Forest Specialist | - Implemented and tuned Random Forest model<br>- Generated feature importance plots<br>- Summarized statistical results |
+| **Arslan** | Lasso Regression Specialist | - Implemented Lasso Regression<br>- Conducted feature selection analysis<br>- Assisted in technical documentation |
+| **All Members** | Collaborative Work | - Integrated 7-day weather API<br>- Developed Keras neural network model |
+
+---
+
 
 ## 📂 Repository Structure
 Breast-Cancer-Predictor
