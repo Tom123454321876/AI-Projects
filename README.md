@@ -1,5 +1,19 @@
 # AI-Projects
 
+A curated portfolio of my AI and machine learning work.  
+This repository serves as an index — each section below links to a separate project repository with full code, data, and documentation.
+
+---
+
+## 📂 Project List
+
+| Project | Description | Tech Stack | Link |
+|---------|-------------|------------|------|
+| 🧬 Breast Cancer Malignancy Predictor | Classifies tumors as malignant or benign using diagnostic features from the Wisconsin dataset. | Python, scikit-learn, pandas, seaborn, matplotlib | [View Repo](https://github.com/Tom123454321876/AI-Projects) |
+| 🌲 Forest Fire Predictor | Predicts severity of forest fires using regression models, Keras neural networks, and 7-day historical weather data from an API. | Python, scikit-learn, Keras, TensorFlow, API Integration | [View Repo](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2) |
+
+---
+
 # 🧬 Breast Cancer Malignancy Predictor
 
 A supervised machine learning project to predict breast cancer malignancy using diagnostic features from the Wisconsin Breast Cancer Dataset.  
@@ -53,7 +67,7 @@ Developed as part of the AAI-500 Capstone Project — *M.S. Applied Artificial I
 # 🌲 Forest Fire Predictor
 
 A machine learning project predicting forest fire severity using weather data and multiple regression-based models.  
-[View Repository](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2)  
+[View Full Repository](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2)  
 Developed as part of the AAI-501 course — *M.S. Applied Artificial Intelligence* — University of San Diego.
 
 ---
@@ -93,15 +107,8 @@ Developed as part of the AAI-501 course — *M.S. Applied Artificial Intelligenc
 | Team Member | Role | Responsibilities |
 | ------------ | ---- | ----------------- |
 | **Thomas Geraci** | Data Engineer & Analyst | - Led data cleaning, transformation, and scaling<br>- Implemented Linear Regression<br>- Created residual and predicted vs. actual plots<br>- Contributed to Keras and weather API sections |
-| **Daniel** | Random Forest Specialist | - Implemented and tuned Random Forest model<br>- Generated feature importance plots<br>- Summarized statistical results |
-| **Arslan** | Lasso Regression Specialist | - Implemented Lasso Regression<br>- Conducted feature selection analysis<br>- Assisted in technical documentation |
+| **Daniel Sims** | Random Forest Specialist | - Implemented and tuned Random Forest model<br>- Generated feature importance plots<br>- Summarized statistical results |
+| **Arslan Isaac** | Lasso Regression Specialist | - Implemented Lasso Regression<br>- Conducted feature selection analysis<br>- Assisted in technical documentation |
 | **All Members** | Collaborative Work | - Integrated 7-day weather API<br>- Developed Keras neural network model |
 
 ---
-
-
-## 📂 Repository Structure
-Breast-Cancer-Predictor
-├── Breast_Cancer_Predictor_Project.ipynb   
-├── data.csv                               
-└── README.md                           
