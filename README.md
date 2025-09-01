@@ -17,7 +17,7 @@ This repository serves as an index. Each section below links to a separate proje
 # 🧬 Breast Cancer Malignancy Predictor
 
 A supervised machine learning project to predict breast cancer malignancy using diagnostic features from the Wisconsin Breast Cancer Dataset.  
-Developed as part of the AAI-500 Capstone Project — *M.S. Applied Artificial Intelligence* — University of San Diego.
+Developed as part of the AAI-500 Capstone Project. *M.S. Applied Artificial Intelligence* University of San Diego.
 
 ---
 
