@@ -1,7 +1,7 @@
 # AI-Projects
 
 A curated portfolio of my AI and machine learning work.  
-This repository serves as an index — each section below links to a separate project repository with full code, data, and documentation.
+This repository serves as an index. Each section below links to a separate project repository with full code, data, and documentation.
 
 ---
 
