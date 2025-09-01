@@ -68,7 +68,7 @@ Developed as part of the AAI-500 Capstone Project. *M.S. Applied Artificial Inte
 
 A machine learning project predicting forest fire severity using weather data and multiple regression-based models.  
 [View Full Repository](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2)  
-Developed as part of the AAI-501 course — *M.S. Applied Artificial Intelligence* — University of San Diego.
+Developed as part of the AAI-501 course *M.S. Applied Artificial Intelligence* University of San Diego.
 
 ---
 
