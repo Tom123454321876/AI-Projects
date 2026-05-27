@@ -1,7 +1,7 @@
 # AI-Projects
 
-A curated portfolio of my AI and machine learning work.  
-This repository serves as an index. Each section below links to a separate project repository with full code, data, and documentation.
+A curated portfolio of my artificial intelligence, machine learning, agentic AI, and IoT forecasting work.  
+This repository serves as an index for selected academic and applied projects, with links to notebooks, repositories, code, data workflows, and documentation.
 
 ---
 
@@ -9,9 +9,10 @@ This repository serves as an index. Each section below links to a separate proje
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|------------|------|
+| 🧠 Multi Agent Financial Analysis System | Autonomous agent workflow that researches public financial information, synthesizes insights, and produces auditable briefs with citations. | CrewAI, Python, OpenAI GPT-4o, Claude 3.5 Sonnet, Agentic AI | [View Repo](https://github.com/apadin-repo/AAI-520-02-FINAL-PROJECT-GROUP-4) |
+| 🌡️ IoT Sensor Forecasting and Tableau Dashboard | Machine learning IoT project that forecasts building sensor conditions using LSTM and Random Forest models, then exports prediction results for Tableau dashboards. | Python, pandas, NumPy, scikit-learn, TensorFlow/Keras, Matplotlib, Seaborn, Tableau | [View Notebook](./Team_6_Final%20Team%20Project%20Machine%20Learning%20IoT%20Application%20Design%20and%20Implementation.ipynb) |
 | 🧬 Breast Cancer Malignancy Predictor | Classifies tumors as malignant or benign using diagnostic features from the Wisconsin dataset. | Python, scikit-learn, pandas, seaborn, matplotlib | [View Repo](https://github.com/Tom123454321876/AI-Projects) |
 | 🌲 Forest Fire Predictor | Predicts severity of forest fires using regression models, Keras neural networks, and 7-day historical weather data from an API. | Python, scikit-learn, Keras, TensorFlow, API Integration | [View Repo](https://github.com/Tom123454321876/AAI501-Forest-Fire-Predictor-Final-Project-Group2) |
-| 🧠 Multi Agent Financial Analysis System | Autonomous agent workflow that researches public financial info, synthesizes insights, and produces auditable briefs with citations. | CrewAI, Python, OpenAI GPT-4o, Claude 3.5 Sonnet | [View Repo](https://github.com/apadin-repo/AAI-520-02-FINAL-PROJECT-GROUP-4) |
 
 ---
 
@@ -34,13 +35,74 @@ Developed by AAI-520-02 Final Project Group 4 at the University of San Diego.
 2. Install dependencies from requirements.txt  
 3. Set environment variables OPENAI_API_KEY and ANTHROPIC_API_KEY  
 4. Run a sample task  
+
+```bash
 python -m src.run --task "Analyze the latest earnings of a Fortune 100 company and summarize risks and opportunities"
+```
 
 5. Review generated artifacts in outputs and reports
 
 ### 🤝 Team and my focus
 • Team: AAI-520-02 Final Project Group 4  
 • Thomas Geraci focus: project structure and documentation quality, reliability fixes around data adapters and artifact saving, evaluation mindset carried over from prior Linear Regression and Keras work
+
+---
+
+# 🌡️ IoT Sensor Forecasting and Tableau Dashboard
+
+A machine learning and IoT analytics project focused on forecasting environmental sensor readings from building data and preparing model outputs for Tableau visualization.  
+Developed as part of AAI-530 Data Analytics and Internet of Things at the University of San Diego.
+
+## 📊 Project Overview
+• Dataset: IoT building sensor CSV files with timestamped readings  
+• Sensors used: Temperature, Humidity, Light, and RSSI  
+• Techniques: time-series preprocessing, resampling, missing-value handling, feature engineering, sequence modeling, lag features, and model evaluation  
+• Models: LSTM neural network for temperature forecasting and Random Forest Regressor for humidity forecasting  
+• Dashboard output: exported `tableau_predictions.csv` containing timestamps, actual values, predicted values, and absolute error fields for Tableau dashboards
+
+## 🛠️ Workflow
+### 1️⃣ Data Processing and Preprocessing
+• Loaded and cleaned large IoT CSV sensor files  
+• Converted Unix timestamps into datetime format  
+• Pivoted sensor readings into a wide time-series format  
+• Resampled readings into consistent 5-minute intervals  
+• Interpolated and filled missing values to prepare the data for modeling
+
+### 2️⃣ Exploratory Data Analysis
+• Visualized temperature and humidity trends over time  
+• Built a sensor correlation matrix  
+• Reviewed autocorrelation, scatter plots, and boxplots to understand sensor behavior  
+• Used EDA results to justify time-based modeling decisions
+
+### 3️⃣ LSTM Temperature Forecasting
+• Built supervised sliding-window sequences from the IoT time series  
+• Used a time-ordered train/validation split to avoid data leakage  
+• Scaled features with MinMaxScaler  
+• Trained a two-layer LSTM model with dropout and early stopping  
+• Evaluated temperature predictions with MAE, RMSE, R², and absolute error plots
+
+### 4️⃣ Random Forest Humidity Forecasting
+• Engineered lag features for humidity and temperature  
+• Added calendar/time features, including hour, day of week, month, weekend flag, and cyclical encodings  
+• Trained a Random Forest Regressor for one-step-ahead humidity forecasting  
+• Compared model predictions against a persistence baseline
+
+### 5️⃣ Tableau Export
+• Merged temperature and humidity prediction outputs by timestamp  
+• Exported a single Tableau-ready CSV with actual values, predictions, and error metrics  
+• Structured the output for KPI tiles, time-series charts, and model error visualizations
+
+## 📈 Results
+• LSTM Temperature Forecasting: MAE 0.1992, RMSE 0.2449, R² 0.9583  
+• Random Forest Humidity Forecasting: MAE 0.1895, RMSE 0.2813, R² 0.9941  
+• Exported 220 aligned prediction rows for Tableau visualization
+
+## 👥 Team Members and Roles
+| Team Member | Role | Responsibilities |
+| ------------ | ---- | ----------------- |
+| **Thomas Geraci** | Machine Learning and Forecasting Contributor | LSTM preprocessing, sequence generation, LSTM model design, temperature evaluation, Random Forest preprocessing, humidity forecasting, metrics, and Tableau prediction export |
+| **Denis Mulabegovic** | Data Processing and EDA Contributor | CSV loading, timestamp conversion, sensor pivoting, resampling, exploratory analysis, and visual checks |
+| **Santosh Kumar** | Data Processing and Project Contributor | Data workflow support, preprocessing design, project validation, and documentation support |
 
 ---
 
